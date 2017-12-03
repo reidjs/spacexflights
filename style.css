@@ -1,0 +1,7 @@
+* {
+  /* background: green; */
+}
+
+#myCanvas {
+  transition: width .5s, height .5s, top .5s, left .5s;
+}
