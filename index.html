@@ -5,13 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Need the jquery UI for the timeline slider -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+
   <title>SpaceX Flights</title>
 </head>
 <body>
-  <canvas id="myCanvas"></canvas>
+  <div id="header">
+    <div class="leftside"></div>
+    <canvas id="myCanvas"></canvas>
+    <div class="rightside"></div>
+  </div>
+  <div id="body">
+    <div class="controls">
+        <p>
+        <label for="amount">Donation amount ($50 increments):</label>
+        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+      <div id="slider"> </div>
+    </div>
+  </div>
+  <script type="application/javascript" src="controls.js"></script>
   <script type="application/javascript" src="vendor/keymaster.js"></script>
-  
   <script type="application/javascript" src="lib/bundle.js"></script>
   
 </body>
