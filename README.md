@@ -113,7 +113,13 @@ landing_type: ocean, ASDS (drone ship), RTLS (return to launch site), null. Top 
 
 Say mission success or mission failure across screen. Spacebar restarts the animation. 
 
+# III. Additional Mission Information 
 
+If there is time for this, the mission interactive will also show information concerning 
+
++ payload (mass, name)
++ rocket metrics (mass, name, cost per launch, propellant)
++ patch graphic 
 
 
 

@@ -1,0 +1,24 @@
+{
+  "name": "spacexflights",
+  "version": "1.0.0",
+  "description": "An interactive history of SpaceX flights using their public API as a data source. The intention for this project is to be used as an educational resource for people interested in spaceflight.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reidjs/spacexflights.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reidjs/spacexflights/issues"
+  },
+  "homepage": "https://github.com/reidjs/spacexflights#readme",
+  "devDependencies": {
+    "webpack": "^3.9.1"
+  }
+}
