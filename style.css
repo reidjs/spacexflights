@@ -79,6 +79,25 @@ i.fa span{
   padding: 0 5px;
 }
 
+div#footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+div#footer a:first-child {
+  margin-left: 200px;
+}
+div#footer a:last-child {
+  margin-right: 200px;
+}
+
+div#map {
+  width: 500px;
+  height: 300px;
+  margin: 40px auto;
+}
 /* #slider {
   border: 1px solid black;
 } */
