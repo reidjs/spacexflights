@@ -37,8 +37,12 @@
         <img id="patch" />
       </div>
       <div class="center">
-        <h2>Information for flight <span class="flight_number"></span></h2>
+        <h2>Flight #<span class="flight_number"></span><span class="fail"><i class="fa fa-frown-o" aria-hidden="true"></i>
+        </span></h2>
         <i class="fa fa-rocket" aria-hidden="true"><span class="rocket_name"></span></i>
+        <i class="fa fa-envelope-o" aria-hidden="true"><span class="payload"></span></i>
+        <i class="fa fa-map-marker" aria-hidden="true"><span class="location"></span></i>
+        <p class="information"></p>
       </div>
       <div class="right">
         <!-- embed youtube video -->
@@ -47,6 +51,7 @@
         </iframe>
       </div>
     </div>
+    <div id="map"></div>
   </div>
   <script type="application/javascript" src="vendor/keymaster.js"></script>
   <script type="application/javascript" src="lib/bundle.js"></script>

@@ -13,6 +13,7 @@ div#header {
 }
 
 
+
 div#main {
   width: 400px;
   padding: 20px;
@@ -47,10 +48,35 @@ div.left img, div.right iframe{
   vertical-align: middle;
 }
 
+div.center {
+  padding-left: 20px;
+}
+
+div.center h2 {
+  color: red;
+}
+
+div.center h2.success {
+  color: green;
+}
+
+div.center h2 span.fail.hide {
+  display: none;
+}
+
 
 div#details div {
   width: 32%;
   overflow: hidden;
+}
+
+i.fa {
+  display: block;
+  padding: 10px;
+}
+
+i.fa span{
+  padding: 0 5px;
 }
 
 /* #slider {
