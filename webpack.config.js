@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./lib/context.js",
+  entry: "./lib/controller.js",
   output: {
   	filename: "./lib/bundle.js"
   },
