@@ -20,5 +20,9 @@
   "homepage": "https://github.com/reidjs/spacexflights#readme",
   "devDependencies": {
     "webpack": "^3.9.1"
+  },
+  "dependencies": {
+    "matter-js": "^0.14.0",
+    "p2": "^0.7.1"
   }
 }
