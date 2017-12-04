@@ -6,9 +6,38 @@
   transition: width .5s, height .5s, top .5s, left .5s;
 }
 
-#slider {
-  border: 1px solid black;
+div#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+
+div#main {
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
+  /* align-items: center; */
+}
+
+div#main button, div#main input {
+  padding: 10px;
+  margin: 10px;
+}
+
+div#main button {
+  width: 100px;
+  align-self: center;
+}
+
+
+/* #slider {
+  border: 1px solid black;
+} */
+
 
 
 /* http://www.cssportal.com/style-input-range/ */
