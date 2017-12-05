@@ -95,16 +95,23 @@ div#footer a:last-child {
 div#map-container {
   display: flex;
   justify-content: space-around;
+  margin: 100px auto;
+  width: 600px;
+  /* margin: 0 auto; */
+}
+div#map-inner {
+  display: flex;
+  align-content: center;
 }
 div#map {
   width: 300px;
   height: 300px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 div#pano {
   width: 300px;
   height: 300px;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 /* #slider {
   border: 1px solid black;
