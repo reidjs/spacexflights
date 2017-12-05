@@ -16,6 +16,8 @@
   <script 
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs29luKQEI61ckdbC5iSkw6jRmh4hqWPY">
   </script>
+  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script> 
+  <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
   <!-- <link rel="stylesheet" href="reset.css"> -->
   <link rel="stylesheet" href="style.css">
 
@@ -23,8 +25,13 @@
 </head>
 <body>
   <div id="header">
-    <div class="leftside"><canvas id="myCanvas"></canvas></div>
-    <div class="rightside"><canvas id="matterCanvas"></canvas></div>
+    <div class="leftside"></div>
+    <div class="rightside">
+      <!-- <canvas id="matterCanvas"></canvas> -->
+      <!-- https://bl.ocks.org/mbostock/ba63c55dd2dbc3ab0127 -->
+      
+          
+    </div>
   </div>
     <div id="main">
       <button id="launch">Launch</button>
@@ -56,6 +63,7 @@
     <div id="map-container">
       <div id="map"></div><div id="pano"></div>
     </div>
+    <canvas id="myCanvas"></canvas>
     <div id="footer">
       <a href="https://github.com/reidjs"><i class="fa fa-github-alt" aria-hidden="true"></i>
         GitHub</a>
@@ -65,6 +73,8 @@
         Website</a>
     </div>
   </div>
+  <!-- <script type='text/javascript' src='planetary/dist/planetaryjs.min.js'></script> -->
+  
   <script type="application/javascript" src="vendor/keymaster.js"></script>
   <script type="application/javascript" src="lib/bundle.js"></script>
   
