@@ -6,6 +6,11 @@
   transition: width .5s, height .5s, top .5s, left .5s;
 }
 
+#myGlobe {
+  transition: width .5s, height .5s, top .5s, left .5s;
+  
+}
+
 div#header {
   display: flex;
   justify-content: space-around;
