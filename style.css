@@ -14,10 +14,22 @@ div#main {
 div#chart-video {
   /* display: flex; */
 }
+canvas#myChart {
+  width: 300px;
+  height: 200px;
+}
+canvas#myGlobe {
+  padding: 20px;
+}
+img#patch {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
 div#map-container {
   display: flex;
   justify-content: space-around;
-  margin: 100px auto;
+  margin: 0 auto;
   width: 600px;
 }
 div#map {
@@ -27,8 +39,4 @@ div#map {
 div#pano {
   width: 300px;
   height: 300px;
-}
-canvas#myChart {
-  width: 300px;
-  height: 200px;
 }
