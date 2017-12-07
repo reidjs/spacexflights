@@ -14,3 +14,17 @@ div#main {
 div#chart-video {
   display: flex;
 }
+div#map-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 100 auto;
+  width: 600px;
+}
+div#map {
+  width: 100%;
+  height: 100%;
+}
+div#pano {
+  width: 100%;
+  height: 100%;
+}
