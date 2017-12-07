@@ -48,6 +48,9 @@ h1 {
   font-family: 'Play';
   font-size: 36px;  
 }
+input#date {
+  text-align: center;
+}
 canvas#myChart {
   width: 300px;
   height: 200px;
