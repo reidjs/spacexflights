@@ -17,60 +17,35 @@
   </script>
   <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script> 
   <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
-  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 
   <title>SpaceX Flights</title>
 </head>
 <body>
-  <div id="header">
-    <div class="leftside">
-        <canvas id="myChart" width="600" height="400"></canvas>    
-    </div>
-    <div class="rightside">
-      <!-- The globe will show up here -->
-      <canvas id="myGlobe"></canvas>
-          
-    </div>
+  <div id="sidebar">
+    <img id="patch" />
+    <h2>Flight #<span class="flight_number"></span><span class="fail"><i class="fa fa-frown-o" aria-hidden="true"></i>
+    </span></h2>
+    <i class="fa fa-rocket" aria-hidden="true"><span class="rocket_name"></span></i>
+    <i class="fa fa-envelope-o" aria-hidden="true"><span class="payload"></span></i>
+    <i class="fa fa-map-marker" aria-hidden="true"><span class="location"></span></i>
+    <p class="information"></p>
+    <iframe width="420" height="315" id="youtube"></iframe>
+    
   </div>
-    <div id="main">
-      <input type="text" id="date" value="Select a date" />      
-      <div id="slider-range"></div>
-    </div>
-    <div id="details">
-      <div class="left">
-        <!-- show mission patch -->
-        <img id="patch" />
-      </div>
-      <div class="center">
-        <h2>Flight #<span class="flight_number"></span><span class="fail"><i class="fa fa-frown-o" aria-hidden="true"></i>
-        </span></h2>
-        <i class="fa fa-rocket" aria-hidden="true"><span class="rocket_name"></span></i>
-        <i class="fa fa-envelope-o" aria-hidden="true"><span class="payload"></span></i>
-        <i class="fa fa-map-marker" aria-hidden="true"><span class="location"></span></i>
-        <p class="information"></p>
-      </div>
-      <div class="right">
-        <!-- embed youtube video -->
-        <iframe width="420" height="315"
-        id="youtube">
-        </iframe>
-      </div>
-    </div>
+  <div id="main">
+    <h1>SpaceX Flight Visualizer</h1>
+    <canvas id="myChart" width="600" height="200"></canvas> 
+    <input type="text" id="date" value="Select a date" />      
+    <div id="slider-range"></div>
+    <div id="visuals">
+    <canvas id="myGlobe"></canvas>
     <div id="map-container">
       <div id="map"></div>
       <div id="pano"></div>
     </div>
-    <canvas id="myCanvas"></canvas>
-    <div id="footer">
-      <a href="https://github.com/reidjs"><i class="fa fa-github-alt" aria-hidden="true"></i>
-        GitHub</a>
-      <a href="https://www.linkedin.com/in/reidsherman/"><i class="fa fa-linkedin" aria-hidden="true"></i>
-        LinkedIn</a>
-      <a href="https://www.reidsherman.com/"><i class="fa fa-fighter-jet" aria-hidden="true"></i>
-        Website</a>
-    </div>
-  </div>  
+  </div>
   <script type="application/javascript" src="vendor/keymaster.js"></script>
   <script type="application/javascript" src="lib/bundle.js"></script>
   
