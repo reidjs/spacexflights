@@ -1,31 +1,64 @@
 body {
   display: flex;
 }
+
+/* SIDEBAR */
+
 div#sidebar {
   padding: 20px;
   width: 300px;
   /* overflow: hidden; */
-}
-div#main {
-  padding: 20px;
-  width: 700px;
-  overflow: hidden;
-}
-div#chart-video {
-  /* display: flex; */
-}
-canvas#myChart {
-  width: 300px;
-  height: 200px;
-}
-canvas#myGlobe {
-  padding: 20px;
 }
 img#patch {
   height: 100px;
   width: 100px;
   margin: 0 auto;
 }
+h2 {
+
+}
+i.fa {
+  display: block;
+  /* padding-right: 40px; */
+  /* padding-right: 15px; */
+}
+i.fa-frown-o {
+  padding-left: 15px;
+  display: inline;
+}
+span.location, span.payload, span.rocket_name{
+  padding-left: 7px;
+}
+p.information {
+  padding: 20px;
+}
+
+/* MAIN CONTENT */
+
+
+div#main {
+  padding: 20px;
+  width: 700px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+  font-family: 'Play';
+  font-size: 36px;  
+}
+canvas#myChart {
+  width: 300px;
+  height: 200px;
+}
+canvas#myGlobe {
+  margin: 0 auto;
+  padding: 20px;
+  width: 600px;
+  height: 300px;
+}
+
 div#map-container {
   display: flex;
   justify-content: space-around;
