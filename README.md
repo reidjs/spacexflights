@@ -21,7 +21,7 @@ Earth's topography is displayed using the d3 JS library to convert Earth's spher
 ### Launch site
 Flight data is connected to the Google maps API to provide both an overhead and panoramic view of the launch site. 
 
-![Launch site viewer](https://media.giphy.com/media/l3mZmSRQIp54tu6Iw/giphy.gif)
+![Launch site google maps](https://media.giphy.com/media/l3mZmSRQIp54tu6Iw/giphy.gif)
 
 
 
