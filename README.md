@@ -1,6 +1,6 @@
 # SpaceX Flights 
 
-An interactive history of SpaceX flights using the github repository [SpaceX API](https://github.com/r-spacex/SpaceX-API) as the primary data source. The intention for this project is to be used as an educational resource for people fascinated with the aerospace industry. 
+An interactive history of SpaceX flights using the github repository [SpaceX API](https://github.com/r-spacex/SpaceX-API) as the primary data source. The intention for this project is to be used as an educational resource for people interested in the aerospace industry. **I am not affiliated with SpaceX in any way**, I made this project because I am fascinated by spaceflight and orbital mechanics.
 
 # I. Display Components
 
