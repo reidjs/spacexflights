@@ -1,10 +1,8 @@
 # SpaceX Flights 
 
-An interactive history of SpaceX flights using the github [SpaceX API](https://github.com/r-spacex/SpaceX-API) as a data source. The intention for this project is to be used as an educational resource for people interested in spaceflight. 
+An interactive history of SpaceX flights using the github repository [SpaceX API](https://github.com/r-spacex/SpaceX-API) as the primary data source. The intention for this project is to be used as an educational resource for people fascinated with the aerospace industry. 
 
-There are two interactive parts to this project, the timeline and the mission show page.
-
-# I. Main Display Components
+# I. Display Components
 
 ### Payload Information and Flight Selector
 
@@ -19,9 +17,16 @@ Earth's topography is displayed using the d3 JS library to convert Earth's spher
 ![Satellite orbit animation](https://media.giphy.com/media/l3mZ5NFq6TJm13W4E/giphy.gif)
 
 ### Launch site
+
 Flight data is connected to the Google maps API to provide both an overhead and panoramic view of the launch site. 
 
 ![Launch site google maps](https://github.com/reidjs/spacexflights/blob/master/launchsite.gif)
+
+### Sidebar
+
+The sidebar displays information about the selected flight such as the rocket type, payload, launch location, youtube press video, and description.
+
+![Sidebar](https://github.com/reidjs/spacexflights/blob/master/spaceX_sidebar_screenshot.png)
 
 # II. Technical Details
 
