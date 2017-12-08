@@ -137,3 +137,30 @@ span.orbit {
   margin-top: 10px;
   align-self: center;
 }
+
+div#footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+div#footer a:first-child {
+  margin-left: 200px;
+}
+div#footer a:last-child {
+  margin-right: 200px;
+}
+div#footer i.fa{
+  text-align: center;
+}
+/* //https://stackoverflow.com/questions/6008324/fade-effect-on-link-hover */
+div#footer a:hover{
+  color:#60bee0;; background:white;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 1s ease-in;
+}
