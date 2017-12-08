@@ -21,8 +21,37 @@ Earth's topography is displayed using the d3 JS library to convert Earth's spher
 ### Launch site
 Flight data is connected to the Google maps API to provide both an overhead and panoramic view of the launch site. 
 
-![Launch site google maps](https://media.giphy.com/media/l3mZmSRQIp54tu6Iw/giphy.gif)
+![Launch site google maps](https://github.com/reidjs/spacexflights/blob/master/launchsite.gif)
 
+# II. Technical Details
+
+### Handling Asynchronous Data 
+
+Early in this project there was an issue where the different components were reaching an inconsistent state. This occurred due to the various data streams being received in odd orders, for example, the flight data was occasionally received after the chart was rendered. To resolve this, I refactored my project architecture to use Flux's global data store to ensure flight data stays consistent across all components. 
+
+
+```
+// lib/store.js
+setLaunches() {
+    let tempStore = {
+      launches: [],
+      dates: []
+    }
+    let getData = this.fetchLaunches;
+    return new Promise((resolve, reject) => {
+      getData().then(res => {
+        res.forEach(launch => {
+          tempStore.dates.push(convertUnixTimeToDateTime(launch.launch_date_unix))
+          tempStore.launches.push(launch)
+          if (tempStore.dates.length === res.length) {
+            resolve(tempStore);
+          }
+        })
+      })
+    })
+  }
+```
+The moment the data is received by the store, the entry file updates the rest of the components (App.js) with the correct information.
 
 
 
