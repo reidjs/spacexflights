@@ -25,19 +25,26 @@
 </head>
 <body>
   <div id="sidebar">
-    <img id="patch" />
-    <h2>Flight #<span class="flight_number"></span><span class="fail"><i class="fa fa-frown-o" aria-hidden="true"></i>
-    </span></h2>
-    <i class="fa fa-rocket" aria-hidden="true"><span class="rocket_name"></span></i>
-    <i class="fa fa-envelope-o" aria-hidden="true"><span class="payload"></span></i>
-    <i class="fa fa-map-marker" aria-hidden="true"><span class="location"></span></i>
-    <p class="information"></p>
+    <div class="details">
+      <img id="patch" />
+      <h2>Flight #<span class="flight_number"></span><span class="fail"><i class="fa fa-frown-o" aria-hidden="true"></i>
+      </span></h2>
+      <i class="fa fa-rocket" aria-hidden="true"><span class="rocket_name"></span></i>
+      <i class="fa fa-envelope-o" aria-hidden="true"><span class="payload"></span></i>
+      <i class="fa fa-map-marker" aria-hidden="true"><span class="location"></span></i>
+    </div>
+    <div class="information">
+      <p class="information"></p>
+    </div>
     <iframe width="300" height="315" id="youtube"></iframe>
-    
   </div>
+
   <div id="main">
     <h1>SpaceX Flight Visualizer</h1>
-    <canvas id="myChart"></canvas> 
+    <h3>Flight #<span class="flight_number"></span></h3>
+    <div class="chart">
+      <canvas id="myChart"></canvas> 
+    </div>
     <input type="text" id="date" value="Select a date" />      
     <div id="slider-range"></div>
     <h2><span class="orbit"></span>*</h2>
