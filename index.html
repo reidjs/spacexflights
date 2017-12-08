@@ -15,12 +15,12 @@
   <script 
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs29luKQEI61ckdbC5iSkw6jRmh4hqWPY">
   </script>
-  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script> 
-  <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+  <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script> 
+  <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Play:700" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <title>SpaceX Flights</title>
 </head>
 <body>
@@ -40,13 +40,14 @@
     <canvas id="myChart"></canvas> 
     <input type="text" id="date" value="Select a date" />      
     <div id="slider-range"></div>
-    <h2>Orbit: <span class="orbit"></span></h2>
+    <h2><span class="orbit"></span>*</h2>
     <canvas id="myGlobe"></canvas>
-    <h2>Launch site</h2>
+    <h2>Launch Site</h2>
     <div id="map-container">
       <div id="map"></div>
       <div id="pano"></div>
     </div>
+    <p id="disclaimer">*Orbit exaggerated for display purposes</p>
   </div>
   <script type="application/javascript" src="vendor/keymaster.js"></script>
   <script type="application/javascript" src="lib/bundle.js"></script>
