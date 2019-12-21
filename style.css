@@ -5,12 +5,7 @@ body {
 
 }
 
-/* SIDEBAR */
-@media screen and (max-width: 600px) {
-  div#sidebar {
-    display: none;
-  }
-}
+
 .hide {
   display: none;
 }
@@ -131,6 +126,7 @@ div#map-container {
 div#map {
   width: 300px;
   height: 300px;
+  display: none;
 }
 div#pano {
   width: 300px;
@@ -138,6 +134,7 @@ div#pano {
 }
 p#disclaimer {
   font-size: 9px;
+  text-align: center;
 }
 div#main h2{
   align-self: center;
@@ -153,23 +150,40 @@ div#footer {
   justify-content: space-around;
   flex-direction: row;
 }
-
+div#footer a {
+  cursor: pointer;
+}
+/* 
 div#footer a:first-child {
   margin-left: 200px;
 }
 div#footer a:last-child {
   margin-right: 200px;
-}
+} */
 div#footer i.fa{
   text-align: center;
 }
 /* //https://stackoverflow.com/questions/6008324/fade-effect-on-link-hover */
 div#footer a:hover{
-  color:#60bee0;; background:white;
+  color:#60bee0;
   -o-transition:color .2s ease-out, background 1s ease-in;
   -ms-transition:color .2s ease-out, background 1s ease-in;
   -moz-transition:color .2s ease-out, background 1s ease-in;
   -webkit-transition:color .2s ease-out, background 1s ease-in;
   /* ...and now override with proper CSS property */
   transition:color .2s ease-out, background 1s ease-in;
+}
+
+/* SIDEBAR */
+@media screen and (max-width: 600px) {
+  div#sidebar {
+    display: none;
+  }
+  canvas#myGlobe {
+    height: unset;
+    width: 100%;
+  }
+  div#map-container {
+    width: 100%;
+  }
 }
