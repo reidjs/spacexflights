@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/reidjs/spacexflights#readme",
   "devDependencies": {
-    "webpack": "^3.9.1"
+    "webpack": "^5.75.0"
   },
   "dependencies": {
     "chart.js": "^2.8.0",
